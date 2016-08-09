@@ -1,0 +1,13 @@
+language: bash
+services: docker
+
+branches: 
+  only: 
+    - master
+
+install:
+  - docker build -t johnwu/jenkins .
+  
+script: 
+  - docker run --name jenkins -d --restart=always johnwu/jenkins; sleep 5
+  - docker ps -a | grep -q jenkins
