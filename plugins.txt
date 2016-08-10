@@ -1,0 +1,11 @@
+scm-api:latest
+git-client:latest
+git:latest
+gitlab-hook:latest
+gitlab-plugin:latest
+ssh:latest
+ansible:latest
+role-strategy:latest
+ws-cleanup:latest
+credentials-binding:latest
+email-ext:latest

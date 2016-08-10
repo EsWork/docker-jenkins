@@ -13,8 +13,10 @@ EOF
 
 apt-get update
 apt-get install --no-install-recommends --no-install-suggests -y \
-ansible
+sudo ansible
 
 cp /etc/apt/sources.list.bak /etc/apt/sources.list
 rm /etc/apt/sources.list.bak
 rm -rf /var/lib/apt/lists/*
+
+echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers

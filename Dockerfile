@@ -9,3 +9,7 @@ COPY executors.groovy /usr/share/jenkins/ref/init.groovy.d/executors.groovy
 RUN bash /usr/src/install.sh
 
 USER jenkins
+
+#COPY plugins.txt /usr/share/jenkins/ref/
+#RUN /usr/local/bin/plugins.sh /usr/share/jenkins/ref/plugins.txt
+
