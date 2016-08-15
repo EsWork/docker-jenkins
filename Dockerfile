@@ -3,6 +3,8 @@ MAINTAINER JohnWu "v.la@live.cn"
 
 USER root
 
+ARG BUILD_CHINA=false
+
 COPY install.sh /usr/src/install.sh
 COPY executors.groovy /usr/share/jenkins/ref/init.groovy.d/executors.groovy
 
