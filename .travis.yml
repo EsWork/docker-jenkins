@@ -6,8 +6,8 @@ branches:
     - master
 
 install:
-  - docker build -t johnwu/jenkins .
+  - docker build -t eswork/jenkins .
   
 script: 
-  - docker run --name jenkins -d --restart=always johnwu/jenkins; sleep 5
+  - docker run --name jenkins -d --restart=always eswork/jenkins; sleep 5
   - docker ps -a | grep -q jenkins
