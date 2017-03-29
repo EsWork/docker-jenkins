@@ -1,5 +1,5 @@
-FROM jenkins:2.7.2
-MAINTAINER JohnWu "v.la@live.cn"
+FROM jenkins:2.32.3
+LABEL maintainer "v.la@live.cn"
 
 USER root
 
@@ -12,6 +12,6 @@ RUN bash /usr/src/install.sh
 
 USER jenkins
 
-#COPY plugins.txt /usr/share/jenkins/ref/
-#RUN /usr/local/bin/plugins.sh /usr/share/jenkins/ref/plugins.txt
+COPY plugins.txt /usr/share/jenkins/ref/
+RUN /usr/local/bin/plugins.sh /usr/share/jenkins/ref/plugins.txt
 

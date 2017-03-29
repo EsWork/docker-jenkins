@@ -1,7 +1,8 @@
+[![Build Status](https://travis-ci.org/vla/docker-jenkins.svg?branch=master)](https://travis-ci.org/vla/docker-jenkins)
 
 # Introduction
 
-`jenkins-2.7.2` with Ansible
+`jenkins-2.32.3` with Ansible
 
 ## Docker-outside-of-Docker Based CentOS7
 
