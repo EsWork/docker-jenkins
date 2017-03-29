@@ -12,6 +12,6 @@ RUN bash /usr/src/install.sh
 
 USER jenkins
 
-COPY plugins.txt /usr/share/jenkins/ref/
-RUN /usr/local/bin/plugins.sh /usr/share/jenkins/ref/plugins.txt
+COPY plugins.txt /usr/share/jenkins/
+RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
 
