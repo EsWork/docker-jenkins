@@ -1,7 +1,7 @@
 all: build
 
 build:
-	@docker build --tag=johnwu/jenkins .
+	@docker build --tag=eswork/jenkins .
 
 release: build
-	@docker build --tag=johnwu/jenkins:$(shell cat VERSION) .
+	@docker build --tag=eswork/jenkins:$(shell cat VERSION) .

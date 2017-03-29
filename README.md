@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/vla/docker-jenkins.svg?branch=master)](https://travis-ci.org/vla/docker-jenkins)
+[![Build Status](https://travis-ci.org/EsWork/docker-jenkins.svg?branch=master)](https://travis-ci.org/EsWork/docker-jenkins)
 
 # Introduction
 
@@ -23,7 +23,7 @@ docker run -d --name jk \
 -v /lib64/libdevmapper.so.1.02:/usr/lib/libdevmapper.so.1.02 \
 -v /lib64/libgcrypt.so.11:/usr/lib/libgcrypt.so.11 \
 -v /lib64/libdw.so.1:/usr/lib/libdw.so.1 \
--p 8080:8080 johnwu/jenkins
+-p 8080:8080 eswork/jenkins
 ```
 
 在jenkins容器上可以使用`sudo docker images`命令访问宿主机`docker`

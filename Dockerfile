@@ -14,4 +14,3 @@ USER jenkins
 
 COPY plugins.txt /usr/share/jenkins/
 RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
-
