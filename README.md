@@ -23,6 +23,7 @@ docker run -d --name jk \
 -v /lib64/libdevmapper.so.1.02:/usr/lib/libdevmapper.so.1.02 \
 -v /lib64/libgcrypt.so.11:/usr/lib/libgcrypt.so.11 \
 -v /lib64/libdw.so.1:/usr/lib/libdw.so.1 \
+-e JAVA_OPTS=-Duser.timezone=Asia/Shanghai \ #默认UTC时区
 -p 8080:8080 eswork/jenkins
 ```
 
