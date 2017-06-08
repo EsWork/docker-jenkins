@@ -1,4 +1,4 @@
-FROM jenkins:2.46.2
+FROM jenkins:2.46.3
 LABEL maintainer "v.la@live.cn"
 
 USER root
