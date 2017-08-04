@@ -3,7 +3,7 @@
 
 # Introduction
 
-`jenkins-2.46.3` with Ansible
+`jenkins-2.60.2` with Ansible
 
 ## Docker-outside-of-Docker Based CentOS7
 
