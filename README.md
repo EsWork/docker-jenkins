@@ -3,7 +3,7 @@
 
 # Introduction
 
-`jenkins-2.60.2` with Ansible
+`jenkins-lts` with Ansible
 
 ## Docker-outside-of-Docker Based CentOS7
 
@@ -26,7 +26,7 @@ docker run -d --name jk \
 -v /lib64/libdw.so.1:/usr/lib/libdw.so.1 \
 -v /lib64/libltdl.so.7:/usr/lib/libltdl.so.7 \
 -e JAVA_OPTS=-Duser.timezone=Asia/Shanghai \ #默认UTC时区
--p 8080:8080 eswork/jenkins
+-p 8080:8080 eswork/jenkins:lts
 ```
 
 在jenkins容器上可以使用`sudo docker images`命令访问宿主机`docker`
